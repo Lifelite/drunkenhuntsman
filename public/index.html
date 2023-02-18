@@ -1,89 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <title>Welcome to the Drunken Huntsman</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../slick/slick.css"/>    
+    <link rel="stylesheet" href="../slick/slick-theme.css"/>    
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/templatemo-dream-pulse.css" />
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <main class="container-fluid">
+      <div class="row">        
+          <nav id="tmSidebar" class="tm-bg-black-transparent tm-sidebar">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-sidebar-sticky">
+              <a href="https://discord.gg/drunkenhuntsman">
+                <img src="../img/DH-Logo.png" alt="Logo Image" class="img-fluid tm-dh-logo" />
+              </a>
+              <div class="tm-brand-box">
+                <div class="tm-double-border-1">
+              </div>
+              <ul id="tmMainNav" class="nav flex-column text-uppercase text-right tm-main-nav">
+                <li class="nav-item">
+                  <a href="#intro" class="nav-link active">
+                    <span class="d-inline-block mr-3">Intro</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">
+                    <span class="d-inline-block mr-3">About</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#widgets" class="nav-link">
+                    <span class="d-inline-block mr-3">Join the fun!</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#streamers" class="nav-link">
+                    <span class="d-inline-block mr-3">DH Streamers</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav flex-row tm-social-links">
+                <li class="nav-item">
+                  <a href="https://discord.gg/drunkenhuntsman" class="nav-link tm-social-link">
+                    <i class="fab fa-discord"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://steamcommunity.com/groups/DrunkenHuntsmanOfficial" class="nav-link tm-social-link">
+                    <i class="fab fa-steam"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.twitch.tv/thedrunkenhuntsman" class="nav-link tm-social-link">
+                    <i class="fab fa-twitch"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://tt.live/da/drunkenhuntsman" class="nav-link tm-social-link">
+                    <i class="fa fa-dice-d20"></i>
+                  </a>
+                </li>
+              </ul>
+              <footer class="text-center text-white small">
+                <p class="mb--0 mb-2"></p>
+                <p class="mb-0">
+                  <a rel="nofollow" href="http://thingsyoucaneat.com" class="tm-footer-link">Eat This!</a>
+                </p>
+              </footer>
+            </div>
+          </nav>
+          
+          <main role="main" class="ml-sm-auto col-12">
+            <div
+              class="parallax-window"
+              data-parallax="scroll"
+              data-image-src="../img/DH-Header.png">
+              <div class="tm-section-wrap">
+                <section id="intro" class="tm-section">
+                    <div class="tm-bg-white-transparent tm-intro">
+                        <h2 class="tm-section-title mb-5 text-uppercase tm-color-primary">Hello and welcome!</h2>
+                        <p class="tm-color-gray">
+                          Welcome to the Homepage for the Drunken Huntsman!
+                        </p>
+                        <p class="mb-0 tm-color-gray">
+                          Join us and take a break from the day to day grind...by doing some in game grinding!  Nerds and Geeks of all types are welcome!
+                        </p>
+                    </div>              
+                </section>
+            </div>            
+          </div>
+
+          <div class="tm-section-wrap bg-white">
+            <section id="about" class="row tm-section">
+              <div class="col-xl-auto">
+                <div class="tm-section-half">    
+                    <!-- <div><i class="fas fa-6x fa-desktop mb-5 tm-section-icon"></i></div>                         -->
+                    <h2 class="tm-section-title tm-color-primary mb-5">About Us</h2>
+                    <p class="mb-5">
+                      This community was started in 2016, officially on discord, when a group of friends who played games together grew tired
+                      of apps such as Skype, Curse, Teamspeak, etc. and moved to the app, Discord.  Lifelite, being stuck with the chore of migration and setting up the server, 
+                      decided upon the name "Drunken Huntsman"...a reference to Skyrim and a play on his surname.  As time went on more and more friends of friends
+                      were invited and the community grew into what it is today.  
+                    </p>
+                    <p>
+                      This community is mostly 30+ year old gamers all with busy lives.  With the state of the world, most are using Discord as their social network;
+                      a much more wholesome and fun way to keep up with friends, game together, and meme together. Now we have clans and groups across several games, feel free to look us up!
+                    </p>
+                </div>
+              </div>
+            </section>
+          </div>
+            
+          <div class="tm-section-wrap bg-white">
+            <section id="widgets" class="row tm-section">
+              <div class="col-12">
+                <div class="w-100 tm-double-border-1 tm-border-gray">
+                    <div class="tm-double-border-2 tm-border-gray tm-box-pad">
+                      <div class="tm-gallery-wrap">
+                          <h2 class="tm-color-primary tm-section-title mb-4 ml-2">See our Discord and Spotify Playlist</h2>
+                          <iframe src="https://discord.com/widget?id=240154712899321856&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/40DM3RwrnKYrlLvtKbZNco?utm_source=generator" width="50%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                       </div>                        
+                    </div>                  
+                  </div>     
+              </div>         
+            </section>
+          </div>
+            
+          <div class="tm-section-wrap bg-white">
+            <section id="streamers" class="row tm-section">
+              <div class="col-12 tm-section-pad">
+                  <div class="tm-flex-item-left">
+                      <div class="tm-w-80">
+                          <h2 class="tm-color-primary tm-section-title mb-4">Drunken Huntsman Streamers</h2>
+                          <p class="mb-5">
+                            Check out our esteemed community streamers!
+                          </p>
+                      </div>
+                      
+                      <div class="row tm-clients-images">
+                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
+                          <a href="https://www.twitch.tv/thedrunkenhuntsman">
+                            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/256244af-e303-4453-8d42-05f62aa98d77-profile_image-70x70.png" alt="Client Image" class="img-fluid tm-client-img" />
+                          </a>                          
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
+                          <a href="https://www.twitch.tv/crocatowa">
+                            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/2199f817-696d-4748-b6a7-4561ef3121b2-profile_image-70x70.png" alt="Client Image" class="img-fluid tm-client-img" />
+                          </a>                          
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
+                          <a href="https://www.twitch.tv/htkami">
+                            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/136b669a-020f-4742-93e2-e85ea3693efc-profile_image-70x70.png" alt="Client Image" class="img-fluid tm-client-img" />
+                          </a>                          
+                        </div>
+                  </div> 
+              </div>                             
+            </section>
+          </div>
+
+        </main>        
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/templatemo-scripts.js"></script>
   </body>
 </html>
